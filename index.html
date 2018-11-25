@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'Administration')">Administration</button>
+    <button class="tablinks" onclick="openTab(event, 'Formular')">Formular</button>
+</div>
+<div id="Administration" class="tabcontent">
+    <label>Formular name:</label> <input type="text" name="formularName" id="templateFormularName" class="formularName"
+                                         placeholder="Some non existing formular">
+    <input type="submit" value="Search" onclick="searchFormular()" class="searchName">
+    <form id="listElements" action="#">
+        <div id="default" style="display:none;" class="elementFormRow">
+            <label>Element</label> <input type="text" name="elementName" id="elementLabel" placeholder="Label 1"
+                                          class="element">
+            <select class="Textbox selectBox1" onchange="chooseTypeOfInput(this)">
+                <option value="Textbox">Textbox</option>
+                <option value="Checkbox">Checkbox</option>
+                <option value="Radio buttons">Radio buttons</option>
+            </select>
+            <div name="countRadioButton" class="radio" style="display: none">
+                <label> Count </label>
+
+                <select class="radioButton" class="countRadioButtons" onchange="chooseNumberOfRadioButtons(this)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="radioButtonLabels">
+
+            </div>
+            <select class="Mandatory selectBox2">
+                <option value="None">None</option>
+                <option value="Mandatory">Mandatory</option>
+                <option value="Numeric">Numeric</option>
+            </select>
+
+        </div>
+
+    </form>
+    <div class="newElement" id="addNewElementButton" style="display:none">
+        <button class="button button5" onclick="addNewElement()">+</button>
+    </div>
+    <div class="newElement">
+        <input type="submit" value="Save" class="saveButtonPosition" onclick="saveFormularTemplate()">
+    </div>
+</div>
+<div id="Formular" class="tabcontent">
+
+    <form class="formularInputElements" action="#">
+        <div id="formularSearchContainer">
+            <label> Formular Name: </label>
+            <select id="selectFormular" onchange="readFormularOnSelect()">
+            </select>
+        </div>
+
+        <label class="versionText formularInputElements">Version</label>
+        <input type="number" name="versionName" class="version formularInputElements">
+        <input type="submit" value="Load" class="loadButton formularInputElements" id="load"><br>
+        <div id="template"></div>
+    </form>
+    <div class="newElement">
+        <input type="submit" value="Save" class="saveButtonPosition" onclick="saveFormularData()">
+    </div>
+</div>
+</div>
+</body>
+</html>

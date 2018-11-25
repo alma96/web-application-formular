@@ -1,0 +1,229 @@
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding-top: 25px;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.formularName {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.formularForm {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.searchName {
+    display: inline-block;
+    margin-right: 10px;
+    width: 70px;
+}
+
+.element {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.elementFormular {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.newElement {
+    max-width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radioButtonLabels {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.radioButtonLabel {
+    margin: 10px;
+}
+
+.countRadioButtons {
+    width: 15px;
+}
+
+.saveButtonPosition {
+    float: right;
+}
+
+.Textbox {
+    margin-left: 40px;
+    display: inline-block;
+
+}
+
+#formularSearchContainer {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.Mandatory {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: #DCDCDC;
+    border-color: black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+
+}
+
+.saveButtonForm {
+    float: right;
+}
+
+.radioButton {
+    max-width: 40px;
+}
+
+.elementFormRow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+span.labelRadioButton {
+    vertical-align: top;
+}
+
+.radioButtonFormular {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.radio {
+    margin-left: 10px;
+}
+
+.button5 {
+    border-radius: 50%;
+}
+
+.saveButton {
+    position: absolute;
+    margin-left: 650px;
+}
+
+
+.version {
+    width: 40px;
+
+}
+
+.formularInputElements {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.loadButton {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.label1 {
+    margin-left: 50px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.label2 {
+    margin-left: 62px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.label3 {
+    margin-left: 62px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.label4 {
+    margin-left: 62px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.radio1 {
+    margin-left: 50px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.radio2 {
+    margin-left: 118px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.radio3 {
+    margin-left: 118px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.label6 {
+    margin-left: 62px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.div {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: -25px;
+
+}
